@@ -22,10 +22,6 @@ __
 
 | Behavior    | Input | Output |
 | :---------- | ----- | -----: |
-| behavior 1 | 'click' box | 'large', 'Med', Or 'small' |
-| behavior 2 | 'click' sauce | 'pesto', 'Alfredo', Or 'Marinara'  |
-| behavior 3 | 'click' check boxs | adds toppings choosen |
-| behavior 4 | 'click' Submit | final price |
 
 
 ## Known Bugs

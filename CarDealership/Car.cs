@@ -8,6 +8,10 @@ namespace Dealership.Models
       private int _price;
       private int _miles;
 
+      public static string MakeSound(string sound)
+      {
+        return "Our cars sound like " + sound;
+      }
       public Car(string makeModel, int price, int miles)
       {
         _makeModel = makeModel;
@@ -23,7 +27,7 @@ namespace Dealership.Models
       {
         return _price;
       }
-      public void Setprice(int newPrice)
+      public void SetPrice(int newPrice)
       {
         _price = newPrice;
       }

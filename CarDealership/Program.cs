@@ -1,20 +1,21 @@
 using System;
 using System.Collections.Generic;
-using Models;
+using Dealership.Models;
 
-namespace Dealership
-{
+namespace Dealership {
+
   public class Program
   {
     public static void Main()
     {
-      Car volkswagen = new Car("1974 Valkswagen Thing", 1100, 368792);
+      Car volkswagen = new Car("1974 Volkswagen Thing", 1100, 368792);
       Car yugo = new Car("1980 Yugo Koral", 700, 56000);
       Car ford = new Car("1988 Ford Country Squire", 1400, 239001);
       Car amc = new Car("1976 AMC Pacer", 400, 198000);
-      
 
-      List<Car> Cars = new List<Car>()  { volkswagen, yugo, ford, amc};
+      List<Car> Cars = new List<Car>() { volkswagen, yugo, ford, amc };
+
+      yugo.SetPrice(300);
 
       Console.WriteLine("Enter maximum price: ");
       string stringMaxPrice = Console.ReadLine();
@@ -22,9 +23,9 @@ namespace Dealership
 
       List<Car> CarsMatchingSearch = new List<Car>(0);
 
-      foreach(Car automobile in Cars)
+      foreach (Car automobile in Cars)
       {
-        if(automobile.WorthBuying(maxPrice))
+        if (automobile.WorthBuying(maxPrice))
         {
           CarsMatchingSearch.Add(automobile);
         }
@@ -32,7 +33,10 @@ namespace Dealership
 
       foreach(Car automobile in CarsMatchingSearch)
       {
-        Console.WriteLine(automobile.MakeModel);
+        Console.WriteLine("----------------------");
+        Console.WriteLine(automobile.GetMakeModel());
+        Console.WriteLine(automobile.GetMiles() + " miles");
+        Console.WriteLine("$" + automobile.GetPrice());
       }
     }
   }

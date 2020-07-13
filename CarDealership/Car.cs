@@ -5,6 +5,17 @@ namespace Dealership.Models
   public class Car
   {
       private string _makeModel;
+      public string MakeModel
+      {
+        get
+        {
+          return "That's the Big secret. You'll have to visit Lonney's to find out about our specials!";
+        }
+        set 
+        {
+          _makeModel = value;
+        }
+      }
       private int _price;
       private int _miles;
 

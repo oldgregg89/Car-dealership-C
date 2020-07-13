@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/iangregg/Desktop/boiler-C#/SomeFileName.csproj",
-      "projectName": "SomeFileName",
-      "projectPath": "/Users/iangregg/Desktop/boiler-C#/SomeFileName.csproj",
+      "projectUniqueName": "/Users/iangregg/Desktop/CarDealership/CarDealership.csproj",
+      "projectName": "CarDealership",
+      "projectPath": "/Users/iangregg/Desktop/CarDealership/CarDealership.csproj",
       "packagesPath": "/Users/iangregg/.nuget/packages/",
-      "outputPath": "/Users/iangregg/Desktop/boiler-C#/obj/",
+      "outputPath": "/Users/iangregg/Desktop/CarDealership/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

@@ -1,11 +1,24 @@
+using System.IO;
 using System;
+using Microsoft.AspNetCore.Hosting;
 using System.Collections.Generic;
-using Dealership.Models;
+using CarDealership.Models;
 
-namespace Dealership {
+namespace CarDealership {
 
   public class Program
   {
+    public static void Main(string[] args)
+    {
+      var host = new WebHostBuilder()
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration()
+        .UseStartup<Startup>()
+        .Build();
+
+      host.Run();
+    }
     public static void Main()
     {
       Car volkswagen = new Car("1974 Volkswagen Thing", 1100, 368792);

@@ -1,6 +1,6 @@
 using System;
 
-namespace Dealership.Models
+namespace CarDealership.Models
 {
   public class Car
   {
@@ -50,5 +50,10 @@ namespace Dealership.Models
       {
         return (_price < maxPrice);
       }
+      public static List<Cars> GetAll()
+      {
+        return _instances;
+      }
+
   }
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace CarDealership.Controllers
 {
-  public class CarController : Controller
+  public class CarsController : Controller
   {
     [HttpGet("/Cars")]
     public ActionResult Index()
@@ -18,7 +18,7 @@ namespace CarDealership.Controllers
       return View();
     }
     [HttpPost("/Cars")]
-    public ActionResult Create(string makeModel, int price, int miles)
+    public ActionResult Create(string makeModel, int miles, int price)
     {
       Car myCars = new Car(makeModel, price, miles);
       return RedirectToAction("Index");
